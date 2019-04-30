@@ -6,7 +6,7 @@ with open('base.dat', 'r') as myfile:
 #filehandle.write(data)
 
 def new_function(value1,value2):
-    with open('{}.txt'.format(value1),'w') as f:
+    with open('{}.dat'.format(value1),'w') as f:
             for p in range(value2[0],value2[1] + 1):
                 print p
                 x = 100000+p
