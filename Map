@@ -1,0 +1,13 @@
+def looping(req_length):
+    with open('MAP.txt', 'r') as myfile:
+      data = myfile.read()
+    for i in range(req_length):
+        x = 100001+i
+        new_data = data.replace('1000001',str(x))
+        print(new_data)
+        filehandle = open('results3.txt', 'w')
+        filehandle.write(new_data)
+        filehandle.close()
+    return "success"
+
+looping(100)
